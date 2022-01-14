@@ -1,0 +1,103 @@
+/* -------------google font-------- */
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Poppins:wght@400;700&display=swap');
+
+/*----------------- common css ------------*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+  height: 85vh;
+  width: 80vw;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.button{
+  outline: 0;
+  border: 0;
+  padding: 10px 24px;
+  border-radius: 41px;
+  background-color: #758283;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s all;
+}
+.button:hover{
+  background-color: #5a6768;
+}
+
+/*---------- nav css ---------*/
+.navbar{
+  height: 94px;
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo a{
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+  color: #3A3A3A;
+}
+
+.nav-menu ul{
+  display: flex;
+}
+.nav-menu ul li{
+  list-style: none;
+  margin-right: 25px;
+}
+.nav-menu ul li a{
+  text-decoration: none;
+  color: #3A3A3A;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/*------------- hero section  -------------*/
+.hero{
+  display: flex;
+  align-items: center;
+  margin: 50px 0;
+}
+.hero-details{
+  flex-basis: 60%;
+}
+.hero-details h1{
+  font-size: 52px;
+  font-weight: 700;
+  color: #3A3A3A;
+}
+.hero-details p{
+  font-size: 16px;
+  font-weight: 600;
+  color: #3A3A3A;
+  width: 520px;
+  margin: 20px 0;
+}
+.hero-photo{
+  flex-basis: 38%;
+}
+.hero-bg-pic{
+  background-image: url(../images/Circle-design.svg);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero-bg-pic img{
+  width: 440px;
+  position: relative;
+  top: 0;
+  left: 15px;
+  transition: transform .5s;
+}
+.hero-bg-pic img:hover{
+  transform: scale(1.1);
+}
