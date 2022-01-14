@@ -189,10 +189,12 @@
 .form{
   flex-basis: 48%;
 }
-.form .input-grid{
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-column-gap: 5px;
+.form .input-flex{
+  display: flex;
+  justify-content: space-between;
+}
+.input-flex input{
+  width: 32%;
 }
 .form h3{
   color: #5E6366;
@@ -257,4 +259,94 @@
 .social-icon .fab{
   height: 32px;
   width: 32px;
+}
+
+
+
+/*------------ media quary ------------*/
+
+@media only screen and (max-width:648px) {
+  nav{
+    display: none;
+  }
+  .hero{
+    flex-direction: column;
+  }
+  .hero-details{
+    order: 2;
+  }
+  .hero-details h1{
+    font-size: 28px;
+    text-align: center;
+  }
+  .hero-details p{
+    font-size: 14px;
+    text-align: center;
+    padding: 0 80px;
+  }
+  button{
+    display: block;
+    margin: 0 auto;
+  }
+  .hero-photo{
+    order: 1;
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  .hero-photo img{
+    width: 256px;
+    left: 36px;
+  }
+  .hero-bg-pic{
+    background-image: url(../images/Circle-design.svg);
+    background-size: 77%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .section-title h1{
+    font-size: 18px;
+    text-align: center;
+  }
+  .photo-cards{
+    grid-template-columns: 1fr;
+  }
+  .contact-title h1{
+    font-size: 18px;
+  }
+  .contact{
+    flex-direction: column;
+  }
+  .address{
+    order: 2;
+  }
+  .address iframe{
+    width: 100%;
+  }
+  .form{
+    order: 1;
+  }
+  .form h3{
+    display: none;
+  }
+  .input-flex{
+    flex-direction: column;
+  }
+  .input-flex input{
+    width: 100%;
+  }
+  .form a{
+    margin-bottom: 20px;
+  }
+
+  .footer-info h5{
+    font-size: 16px;
+  }
+  .footer-info p{
+    font-size: 14px;
+  }
+  .footer-info .fab{
+    width: 24px;
+    height: 24px;
+  }
 }
