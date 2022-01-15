@@ -268,7 +268,7 @@
 
 /*------------ media quary ------------*/
 
-@media only screen and (max-width:648px) {
+@media (min-width: 0px) and (max-width: 768px){
   .container{
     width: 90vw;
     margin: 0 auto;
@@ -377,5 +377,43 @@
   .footer-info .fab{
     width: 24px;
     height: 24px;
+  }
+}
+
+/*------------------ tablet divice --------------*/
+@media (min-width: 768px) and (max-width: 992px){
+  .container{
+    width: 100vw;
+  }
+  
+  .toggol-menu{
+    display: none;
+
+  }
+  .hero{
+    flex-direction: column;
+  }
+  .hero-details{
+    order: 2;
+    flex-basis: 100%;
+  }
+  .hero-photo{
+    flex-basis: 100%;
+    order: 1;
+  }
+  .photo-cards{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .contact{
+    flex-direction: column;
+  }
+  .address{
+    flex-basis: 100%;
+    order: 2;
+    margin-top: 40px;
+  }
+  .form{
+    flex-basis: 100%;
+    order: 1;
   }
 }
